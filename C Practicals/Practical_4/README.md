@@ -1,4 +1,4 @@
-# Practical 3
+# Practical 4
 ## _Write a C Program that will take 3 positive integers as input and verify whether the they form a Pythagorean triplet or not._
 
 ### Description
