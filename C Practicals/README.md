@@ -4,6 +4,7 @@ Following are list of programs by their Title :
 - [Program to Calculate Surface Area and Volume of Sphere](./Practical_1/)
 - [Program to Calculate Digit Sum of 5 digit number](./Practical_2/)
 - [Program to Check Sides of Triangle](./Practical_3/)
+- [Program to Check Number is Pythagorean Triplet or not](./Practical_4) 
 
 ### How to use
 
