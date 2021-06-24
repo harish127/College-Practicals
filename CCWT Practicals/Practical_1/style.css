@@ -1,0 +1,33 @@
+
+body{
+padding :20px;
+border:1px dotted black;
+}
+
+ol{
+color:green;
+}
+
+li{
+color:maroon;
+}
+
+table{
+padding:10px 0px;
+border:1px solid black; 
+//border-radius:5px;
+color:skyblue;
+}
+
+td{
+padding :0px 6px 0px;
+}
+
+th{
+padding:0px 6px 0px;
+color:blue;
+}
+
+span{
+color:red;
+}
