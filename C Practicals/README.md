@@ -6,6 +6,7 @@ Following are list of programs by their Title :
 - [Program to Check Sides of Triangle](./Practical_3/)
 - [Program to Check Number is Pythagorean Triplet or not](./Practical_4)
 - [Program to Calculate Digit Sum of Number using Function](./Practical_6) 
+- [Program to Calculate Maximum of 4 Numbers using Macros](./Practical_7) 
 
 ### How to use
 
