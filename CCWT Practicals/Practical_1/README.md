@@ -8,5 +8,5 @@
 - Displayed a Table with border, color and padding.
 - Displayed use of span tag inside p tag with color attribute. 
 
-### Issuses
+### Issues
 - I think there is nothing worng in HTML CSS, everyone have his prospective.
