@@ -9,6 +9,7 @@ Following are list of programs by their Title :
 - [Program to Calculate Maximum of 4 Numbers using Macros](./Practical_7) 
 - [Program to Print Reverse of arugument Using Recursion](./Practical_8) 
 - [Program to Print Sum of N Even Number Using Recursion](./Practical_9) 
+- [Program to sort an array using Buble sort technique](./Practical_10)
 
 ### How to use
 
