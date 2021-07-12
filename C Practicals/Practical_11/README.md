@@ -1,5 +1,5 @@
 # Practical 11
-## _ Write a C program that will take elements of two integer array of 5 element each, and insert the common elements of both the array into third array(Set intersection) _
+## _Write a C program that will take elements of two integer array of 5 element each, and insert the common elements of both the array into third array(Set intersection)._
 
 ### Description
 - This program will Input a 5 number each for two array and Print the common number in both the array.
