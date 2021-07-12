@@ -1,0 +1,60 @@
+<!--
+
+ To Develop and demonstrate a XHTML file that includes JavaScript script for the following problems: 
+a) Input: A number n obtained using prompt, Output: The first n Fibonacci numbers
+b) Input: A number n obtained using prompt, Output: A table of numbers from 1 to n and their squares using alert
+
+Coded By : Harish Kumar
+Date : 10/7/21
+
+-->
+
+<html>
+<head>
+<title>Parctical 2</title>
+</head>
+<body>
+<h1>Practical 2</h1>
+<label >For first n Fibonacci numbers</label>
+<button onClick="fibo()" name="fiboNacii" >Click here</button><br>
+<label >For table of numbers from 1 to n and their squares</label>
+<button onClick="tab()" name="table_square" >Click here</button> 
+</body>
+
+<script>
+function fibo(){
+let f1=0, f2=1, i;
+let n= prompt("Enter a number :");
+if(!isNaN(n)){
+if(n<1)document.write(0+" ");
+else{
+document.write(f1+" ");
+for(i=1;i<n; i++){
+ document.write(f2+" ");
+ let next=f1+f2;
+ f1=f2;
+ f2=next;
+}
+}
+}else
+alert("Not a number"); 
+}
+
+function tab(){
+let i, j;
+let n = prompt("Enter a number :");
+
+if(!isNaN(n)){
+
+for (i=1; i<=n;i++){
+ for(j=1; j<=10;j++){
+ document.write(i + " * " + j + " = " + (i*j)+ " " + (i*j)*(i*j) +"<br>");
+}
+document.write("<br>");
+}
+}else
+alert("Not a number"); 
+}
+
+</script>
+</html>
