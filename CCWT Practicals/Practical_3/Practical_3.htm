@@ -1,0 +1,55 @@
+<!--
+
+To Develop and demonstrate a XHTML file that includes Javascript script that uses functions for the following problems:
+  a) Parameter: A string, Output: The position in the string of the left-most vowel
+  b) Parameter: A number, Output: The number with its digits in the reverse order
+
+Coded By : Harish Kumar
+Date : 12/7/21
+
+-->
+
+<html>
+<head>
+<title>Parctical 3</title>
+</head>
+<body>
+<h1>Practical 3</h1>
+<label >For position of left-most vowel in string</label>
+<button onClick="alert(vowel(prompt('Enter a string')))" name="btnVowel" >Click here</button><br>
+<label >For numbers with its digit reversed</label>
+<button onClick="alert(revs(prompt('Enter a number')))" name="btnRevers" >Click here</button> 
+</body>
+
+<script>
+function vowel(n){
+
+for(let i=0;i<n.length;i++){
+  switch(n[i]){
+ case 'a':
+ case 'e':
+ case 'i':
+ case 'o':
+ case 'u':
+ case 'A':
+ case 'E':
+ case 'I':
+ case 'O':
+ case 'U':
+    return "Position of left-most vowel is " + (i+1);
+}}
+
+return "No vowel found in given string";
+ 
+}
+
+function revs(a){
+let temp="";
+
+for(let i=0;i<a.length;i++) temp+=a[(a.length-1)-i];
+
+return "digit reversed number is " + temp +" ";
+}
+
+</script>
+</html>
