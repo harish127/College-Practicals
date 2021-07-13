@@ -3,6 +3,7 @@
 Following are list of Experiments by their Title :
 - [To Develop and demonstrate a XHTML document that illustrates the use external style sheet, ordered list, table, borders, padding, color, and the <span> tag](./Practical_1/)
 - [To Develop and demonstrate a XHTML file that includes JavaScript script for the following problems: a)n Fibonacci b)Table upto n and square of it.](./Practical_2)
+- [To Develop and demonstrate a XHTML file that includes JavaScript script for the following problems: a)First Left-most vowel b)Digit Reverse of Number.](./Practical_3)
 ### How to use
 
 - You will need Latest Browser installed on your computer.
