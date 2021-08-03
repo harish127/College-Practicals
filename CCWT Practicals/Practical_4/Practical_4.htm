@@ -1,0 +1,40 @@
+<!--
+
+To Develop and demonstrate, using Javascript script, a XHTML document that collects the RollNo ( the valid format is: A 
+digit from 1 to 4 followed by two upper-case characters followed by two digits followed by two upper-case characters 
+followed by three digits; no embedded spaces allowed- e.g. 1AB23CD356, 1GC13CS345) of the user. Event handler must 
+be included for the form element that collects this information to validate the input. Messages in the alert windows must be 
+produced when errors are detected.
+
+Coded By : Harish Kumar
+Date : 21/7/21
+
+-->
+
+<html>
+
+<head>
+
+<title>Parctical 4</title>
+
+</head>
+
+<body>
+
+
+<h1>Practical 4</h1>
+<p><bold>Roll No.</bold> <input type="text" name="rollno"/></p>
+  
+
+</body>
+
+<script>
+const b = document.querySelector('input');
+b.oninput = function(){
+let val = b.value.length;
+   if (val == 10) {console.log(b.value);}
+   else if(val >10){alert("You have entered more than 10 characters.");}
+}
+</script>
+
+</html>
