@@ -5,6 +5,7 @@ Following are list of programs by their Title :
 - [Program to Calculate Digit Sum of 5 digit number](./Practical_2/)
 - [Program to Check Sides of Triangle](./Practical_3/)
 - [Program to Check Number is Pythagorean Triplet or not](./Practical_4)
+- [Program to print all prime numbers between a given range of numbers](./Practical_5)
 - [Program to Calculate Digit Sum of Number using Function](./Practical_6) 
 - [Program to Calculate Maximum of 4 Numbers using Macros](./Practical_7) 
 - [Program to Print Reverse of arugument Using Recursion](./Practical_8) 
