@@ -8,5 +8,5 @@ Following are list of Experiments by their Title :
 
 - You will need Latest Browser installed on your computer.
 - Clone this folder locally, anywhere in you PC.
-- Open the Pactical-<number>.html file.
+- Open the Practical-(number).html file.
 - Thats it !
