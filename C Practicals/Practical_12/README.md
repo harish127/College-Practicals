@@ -12,7 +12,7 @@
 
 ### Output
 
-***
+```
 Enter 5 Names
 Name 1: Gurdeep Bobal
 Name 2: Anah Kapadia 
@@ -22,5 +22,5 @@ Name 5: Anah Kapadia
 Longest name is Rajesh Trivedi
 Press Any Key to Exit...
 _ 
-***  
+```  
 
