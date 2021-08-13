@@ -13,6 +13,7 @@ Following are list of programs by their Title :
 - [Program to sort an array using Buble sort technique](./Practical_10)
 - [Program to Perfrom Set Intersection in Arrays](./Practical_11)
 - [Program to take 5 names as input and print the longest name](./Practical_12)
+- [Program to input the details of 5 Student and print details of all the students whose total marks is grater than a given value](./Practical_13)
 
 ### How to use
 
