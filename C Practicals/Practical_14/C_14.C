@@ -92,7 +92,7 @@ while(i<5){
   clrscr();
   printf("Details of Employee %d",i+1);
   show_data(&e[i]);  //calling show_data() function 
-  printf("\nPress Any Key to continue...");
+  printf("\nPress Any Key to Continue...");
   getch();
   i++;
   }
