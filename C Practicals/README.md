@@ -16,6 +16,7 @@ Following are list of programs by their Title :
 - [Program to input the details of 5 Student and print details of all the students whose total marks is grater than a given value](./Practical_13)
 - [Program to input the details of 5 Employee and Store in Structure and Union](./Practical_14)
 - [Program to copy the contents of one file into another file](./Practical_15)
+- [Program to take any number of integers from command line as argument and print the sum of all those integers](./Practical_16)
 
 ### How to use
 
