@@ -20,7 +20,7 @@ void arr_Insert(int *arr, int *size_ptr,int val){
         arr[(*size_ptr)]=val;
         (*size_ptr)++;
     }else{
-        cout<<"\nError: Array is full, not able to insert!!";
+        cout<<"\nError: Array is full, not able to insert!!\n";
     }
 }
 
@@ -59,9 +59,9 @@ void arr_delete(int *arr, int *size_ptr, int val){
 
 void check_index(int indx){
     if(indx==-1) 
-        cout<<"\nElement not found in Array!!";
+        cout<<"\nElement not found in Array!!\n";
     else
-        cout<<"\nElement found at index "<<indx;
+        cout<<"\nElement found at index "<<indx<<"\n";
 }
 
 
@@ -101,7 +101,7 @@ int main(){
                 check_index(b_Search(arr,size,no));
                 break;
             case 5:
-                cout<<"\nProgram is Exiting..."
+                cout<<"\nProgram is Exiting...";
                 break;
             default:
                 cout<<"Error: Wrong Choice, Try Again!!";
