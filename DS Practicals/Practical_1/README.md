@@ -2,7 +2,7 @@
 ## _Write a program to perform following operations in one dimensional array, Insertion, Deletion and Searching (Linear & Binary)._
 
 ### Description
-- This program is a Menu driven with Five choices to selects.
+- This program is a Menu driven Program with Five choices to selects.
 - This program showes Array data structure implementaion.
 - There are manny functions define to perform operation on Array such as Insertion, Deletion and Searching.
 - There are two options for Searching Linear Search and Binary Search.
@@ -36,7 +36,7 @@ Enter any choice: 2
 
 Enter number to be deleted: 67
 ``` 
-Perfroming Linaer Search Operation
+Perfroming Linear Search Operation
 ```
 1. INSERTION 
 2. DELETION
