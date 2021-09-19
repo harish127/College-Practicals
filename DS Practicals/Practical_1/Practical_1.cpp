@@ -100,6 +100,9 @@ int main(){
                 cin>>no;
                 check_index(b_Search(arr,size,no));
                 break;
+            case 5:
+                cout<<"\nProgram is Exiting..."
+                break;
             default:
                 cout<<"Error: Wrong Choice, Try Again!!";
                 break;
