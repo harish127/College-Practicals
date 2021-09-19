@@ -54,6 +54,8 @@ void arr_delete(int *arr, int *size_ptr, int val){
             arr[i]=arr[i+1];
         }
         (*size_ptr)--;
+    }else{
+        cout<<"\nElement not found in Array!!\n";
     }
 }
 
