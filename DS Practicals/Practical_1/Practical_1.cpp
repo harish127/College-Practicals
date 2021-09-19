@@ -34,14 +34,14 @@ int l_Search(int *arr,int size,int item){
     return -1;
 }
 
-int b_Search(int *arr,int size,int val){
+int b_Search(int *arr,int size,int item){
     int start =0, end=size;
     while (start<=end)
     {
         int mid=(start+end)/2;
-        if(arr[mid]==val)
+        if(arr[mid]==item)
             return mid;
-        else if(val>arr[mid]) start=mid+1;
+        else if(item>arr[mid]) start=mid+1;
         else end=mid-1;
     }
     return -1;
@@ -87,6 +87,12 @@ int main(){
                 cout<<"\nEnter number to be deleted: ";
                 cin>>no;
                 arr_delete(arr,&size,no);
+                break;
+
+            case 3:
+                cout<<"\nEnter number to be Searched: ";
+                cin>>no;
+                check_index(l_Search(arr,size,no));
                 break;
 
             case 4:
