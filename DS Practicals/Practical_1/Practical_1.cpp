@@ -8,13 +8,15 @@ Date: 17/09/2021
 */
 
 #include<iostream>
-#define MAX_SIZE 100
+#define MAX_SIZE 100  //change this to change the maximum size of array
 using namespace std;
 
+//function to check size of array not exceeding its maximum length
 bool check_size(int size){
     return size>=MAX_SIZE? false : true;
 }
 
+//function to insert an element into array from back
 void arr_Insert(int *arr, int *size_ptr,int val){
     if(check_size(*size_ptr)){
         arr[(*size_ptr)]=val;
@@ -24,6 +26,7 @@ void arr_Insert(int *arr, int *size_ptr,int val){
     }
 }
 
+//function implementing linear search on array
 int l_Search(int *arr,int size,int item){
 
     for (int i = 0; i <= size; i++)
@@ -34,6 +37,7 @@ int l_Search(int *arr,int size,int item){
     return -1;
 }
 
+//function implementing binary search on array
 int b_Search(int *arr,int size,int item){
     int start =0, end=size;
     while (start<=end)
@@ -47,6 +51,7 @@ int b_Search(int *arr,int size,int item){
     return -1;
 }
 
+//function a element from array
 void arr_delete(int *arr, int *size_ptr, int val){
     int ind;
     if((ind=b_Search(arr,*size_ptr,val)) != -1){
@@ -59,6 +64,7 @@ void arr_delete(int *arr, int *size_ptr, int val){
     }
 }
 
+//function check return of index linear or binary search function and to print a message accordingly
 void check_index(int indx){
     if(indx==-1) 
         cout<<"\nElement not found in Array!!\n";
@@ -69,43 +75,49 @@ void check_index(int indx){
 
 
 int main(){
+    //variable declation
     int arr[MAX_SIZE];
     int ch, size=0;
+
+    //Menu System 
     while (ch!=5)
     {
         cout<<"1. INSERTION \n2. DELETION \n3. SEARCHING(Linear) \n4. SEARCHING(Binary) \n5. EXIT";
         cout<<"\nEnter any choice: ";
         cin>>ch;
+
         int no;
         switch (ch)
         {
-            case 1:
+            case 1: //for Insertion
                 cout<<"\nEnter number to be inserted: ";
                 cin>>no;
                 arr_Insert(arr,&size,no);
                 break;
 
-            case 2:
+            case 2: //for Deletion
                 cout<<"\nEnter number to be deleted: ";
                 cin>>no;
                 arr_delete(arr,&size,no);
                 break;
 
-            case 3:
+            case 3: //for Linear Search
                 cout<<"\nEnter number to be Searched: ";
                 cin>>no;
                 check_index(l_Search(arr,size,no));
                 break;
 
-            case 4:
+            case 4: //for Binary Search
                 cout<<"\nEnter number to be Searched: ";
                 cin>>no;
                 check_index(b_Search(arr,size,no));
                 break;
-            case 5:
+
+            case 5: //for Terminating program
                 cout<<"\nProgram is Exiting...";
                 break;
-            default:
+
+            default: //for Invalid input
                 cout<<"Error: Wrong Choice, Try Again!!";
                 break;
         }
