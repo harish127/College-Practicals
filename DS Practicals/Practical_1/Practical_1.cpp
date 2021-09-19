@@ -24,6 +24,16 @@ void arr_Insert(int *arr, int *size_ptr,int val){
     }
 }
 
+int l_Search(int *arr,int size,int item){
+
+    for (int i = 0; i <= size; i++)
+    {
+        if(arr[i]==item)
+            return i;
+    }
+    return -1;
+}
+
 int b_Search(int *arr,int size,int val){
     int start =0, end=size;
     while (start<=end)
@@ -78,13 +88,11 @@ int main(){
                 cin>>no;
                 arr_delete(arr,&size,no);
                 break;
-                
+
             case 4:
                 cout<<"\nEnter number to be Searched: ";
                 cin>>no;
-                int ind;
-                ind = b_Search(arr,size,no);
-
+                check_index(b_Search(arr,size,no));
                 break;
             default:
                 cout<<"Error: Wrong Choice, Try Again!!";
