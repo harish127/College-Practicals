@@ -10,6 +10,7 @@ Date: 17/09/2021
 #include<iostream>
 #define MAX_SIZE 100
 using namespace std;
+
 bool check_size(int size){
     return size>=MAX_SIZE? false : true;
 }
@@ -39,12 +40,18 @@ int b_Search(int *arr,int size,int val){
 void arr_delete(int *arr, int *size_ptr, int val){
     int ind;
     if((ind=b_Search(arr,*size_ptr,val)) != -1){
-        cout<<"\nfound at "<<ind;
         for(int i=ind;i<*size_ptr;i++){
             arr[i]=arr[i+1];
         }
         (*size_ptr)--;
     }
+}
+
+void check_index(int indx){
+    if(indx==-1) 
+        cout<<"\nElement not found in Array!!";
+    else
+        cout<<"\nElement found at index "<<indx;
 }
 
 
@@ -54,27 +61,35 @@ int main(){
     int ch, size=0;
     while (ch!=5)
     {
-    cout<<"1. INSERTION \n2. DELETION \n3. SEARCHING(Linear) \n4. SEARCHING(Binary) \n5. EXIT";
-    cout<<"\nEnter any choice: ";
-    cin>>ch;
-    int no;
-    switch (ch)
-    {
-    case 1:
-        cout<<"\nEnter number to be inserted: ";
-        cin>>no;
-        arr_Insert(arr,&size,no);
-        break;
+        cout<<"1. INSERTION \n2. DELETION \n3. SEARCHING(Linear) \n4. SEARCHING(Binary) \n5. EXIT";
+        cout<<"\nEnter any choice: ";
+        cin>>ch;
+        int no;
+        switch (ch)
+        {
+            case 1:
+                cout<<"\nEnter number to be inserted: ";
+                cin>>no;
+                arr_Insert(arr,&size,no);
+                break;
 
-    case 2:
-        cout<<"\nEnter number to be deleted: ";
-        cin>>no;
-        arr_delete(arr,&size,no);
-        break;
-    default:
-        cout<<"Error: Wrong Choice, Try Again!!";
-        break;
-    }
+            case 2:
+                cout<<"\nEnter number to be deleted: ";
+                cin>>no;
+                arr_delete(arr,&size,no);
+                break;
+                
+            case 4:
+                cout<<"\nEnter number to be Searched: ";
+                cin>>no;
+                int ind;
+                ind = b_Search(arr,size,no);
+
+                break;
+            default:
+                cout<<"Error: Wrong Choice, Try Again!!";
+                break;
+        }
     }
     
 
