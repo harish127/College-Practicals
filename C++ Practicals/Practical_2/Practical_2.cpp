@@ -54,8 +54,12 @@ int main(){
             res = test_num(test_num(test_num(a,b),c),d);
             cout<<"\n Gratest Number is "<<res<<"\n";
             break;
-        
+        case 'd':
+            cout<<"\nExiting out of program...";
+            break;
+
         default:
+            cout<<"\nERROR: Wrong Choice, Try Again!!\n";
             break;
         }
     }
