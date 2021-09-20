@@ -40,6 +40,13 @@ int main(){
             res = test_num(a,b);
             cout<<"\n Gratest Number is "<<res<<"\n";
             break;
+
+        case 'b':
+            cout<<"\nEnter three numbers: ";
+            cin>>a>>b>>c;
+            res = test_num(test_num(a,b),c);
+            cout<<"\n Gratest Number is "<<res<<"\n";
+            break;
         
         default:
             break;
