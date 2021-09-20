@@ -11,16 +11,18 @@ Date: 20/9/2021
 
 using namespace std;
 
+//Function to find gratest of two number using switch case
 int test_num(int n1,int n2){
     switch (n1>n2)
     {
-    case 0:
+    case 0: //n2 is gratest
         return n2;
-    case 1:
+    case 1: //n1 is gratest
         return n1;
     } ;
 }
 
+//main() function
 int main(){
     //Variable Declration 
     char ch;
@@ -34,31 +36,32 @@ int main(){
 
         switch (ch)
         {
-        case 'a':
+        case 'a': //for Two numbers option
             cout<<"\nEnter two numbers: ";
             cin>>a>>b;
             res = test_num(a,b);
             cout<<"\n Gratest Number is "<<res<<"\n";
             break;
 
-        case 'b':
+        case 'b': //for Three numbers option
             cout<<"\nEnter three numbers: ";
             cin>>a>>b>>c;
             res = test_num(test_num(a,b),c);
             cout<<"\n Gratest Number is "<<res<<"\n";
             break;
 
-        case 'c':
+        case 'c': //for four numbers option
             cout<<"\nEnter four numbers: ";
             cin>>a>>b>>c>>d;
             res = test_num(test_num(test_num(a,b),c),d);
             cout<<"\n Gratest Number is "<<res<<"\n";
             break;
-        case 'd':
+
+        case 'd': //for Exit option
             cout<<"\nExiting out of program...";
             break;
 
-        default:
+        default: //for Invalid option
             cout<<"\nERROR: Wrong Choice, Try Again!!\n";
             break;
         }
