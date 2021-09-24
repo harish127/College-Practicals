@@ -3,6 +3,7 @@
 Following are list of programs by their Title :
 - [Program to check whether number is prime or not](./Practical_1/)
 - [Program to read number and to display the largest value between using switch case](./Practical_2/)
+- [Program to find sum of first natural numbers](./Practical_3/)
 
 ### How to use
 
