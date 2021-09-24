@@ -2,6 +2,7 @@
 ## _Here You will find all the Parcticals done by me_
 Following are list of programs by their Title :
 - [Program to check whether number is prime or not](./Practical_1/)
+- [Program to read number and to display the largest value between using switch case](./Practical_2/)
 
 ### How to use
 
