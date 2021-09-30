@@ -3,7 +3,7 @@
 
 ### Description
 - This program is a Menu driven Program with Five choices to selects.
-- This program showes Array data structure implementaion.
+- This program shows Array data structure implementaion.
 - There are manny functions define to perform operation on Array such as Insertion, Deletion and Searching.
 - There are two options for Searching Linear Search and Binary Search.
 - Sorted Input is allowed for proper functioning of Program.
