@@ -25,7 +25,7 @@ bool check_underFlow(int top){
 void stk_Push(int *arr, int *top_ptr,int val){
     if(!check_overFlow(*top_ptr)){
         arr[++(*top_ptr)]=val;
-        
+        cout<<"Element PUSHED\n";
         
     }else{
         cout<<"\nError: Stack is full, not able to PUSH!!\n";
@@ -35,7 +35,7 @@ void stk_Push(int *arr, int *top_ptr,int val){
 //function to pop an element from top of stack
 void stk_Pop(int *arr, int *top_ptr){
     if(!check_underFlow(*top_ptr)){
-        cout<<"\nPoped Element: "<<arr+(*top_ptr);
+        cout<<"\nPoped Element: "<<arr[(*top_ptr)]<<"\n";
         (*top_ptr)--;
     }else{
         cout<<"\nError: Stack is empty, not able to POP!!\n";
