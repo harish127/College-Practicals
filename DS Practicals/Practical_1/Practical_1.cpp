@@ -51,7 +51,7 @@ int b_Search(int *arr,int size,int item){
     return -1;
 }
 
-//function a element from array
+//function delete an element from array
 void arr_delete(int *arr, int *size_ptr, int val){
     int ind;
     if((ind=b_Search(arr,*size_ptr,val)) != -1){
