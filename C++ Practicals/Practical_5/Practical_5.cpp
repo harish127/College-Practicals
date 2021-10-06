@@ -10,14 +10,6 @@ Date: 3/10/2021
 #include <iostream>
 using namespace std;
 
-// void read_matrix(int arr, int r,int c){
-//     for(int i=0;i<r;i++){
-//         for(int j=0;j<c;j++){
-//             cin>>arr[i][j];
-//         }
-//     }
-// }
-
 int main()
 {
     int r1, r2, c1, c2;
