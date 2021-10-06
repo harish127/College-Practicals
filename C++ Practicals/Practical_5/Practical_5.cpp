@@ -36,6 +36,11 @@ int main()
     cout << "Enter number row & column of second matrix: ";
     cin >> r2 >> c2;
 
+    if (r1 != c2)
+    {
+        cout << "\nMultilpication of matrix not possible!!";
+        return -1;
+    }
     int arr2[r2][c2];
     cout << "Enter Elements of second matrix: ";
     for (int i = 0; i < r2; i++)
@@ -46,4 +51,24 @@ int main()
         }
     }
 
+    int res[c1][r2];
+
+    for(int i=0;i<r1;i++){
+        for(int j=0;j<c2;j++){
+            int sum=0;
+            for(int k=0;k<r2;k++){
+                sum+=arr1[i][k]*arr2[k][j];
+            }
+            res[i][j]=sum;
+        }
+    }
+
+    cout<<"\nResultant matrix\n";
+    for(int i=0;i<r1;i++){
+        for(int j=0;j<c2;j++){
+            cout<<res[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    
 }
